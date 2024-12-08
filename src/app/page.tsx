@@ -11,6 +11,10 @@ const HomePage = () => {
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit adipisci ipsum pariatur repellat, iste laudantium sequi ipsa natus quidem quae delectus inventore veniam vitae dolor dolorem sapiente quos fuga deserunt.
       </p>
+
+      <button>
+        Login
+      </button>
      
       
     </div>
