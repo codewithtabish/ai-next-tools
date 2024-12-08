@@ -19,7 +19,7 @@ const HeroSection = () => {
     Simplify Your Everyday Tasks
   </h1>
   <p className="mb-8 leading-relaxed ">
-    Explore a collection of powerful tools like tags extractor,Ip address tracker, currency converter, QR generator, and more—all in one place. Enhance productivity with ease.
+    Explore a collection of powerful tools like tags extractor,Ip address tracker,domain tracker, currency converter, QR generator, and more—all in one place. Enhance productivity with ease.
   </p>
   <div className="flex justify-center">
     <Button
