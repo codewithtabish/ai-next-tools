@@ -1,13 +1,17 @@
+"use client"
+import AllToolsSection from "@/components/custom/AllToolsSection";
+import Footer from "@/components/custom/Footer";
 import HeroSection from "@/components/custom/HeroSection";
+import LandingToolsList from "@/components/custom/LandingToolsList";
 import React from "react";
 
 const HomePage = () => {
   return (
     <div className="container mx-auto min-h-[100vh] ">
       <HeroSection />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum nesciunt obcaecati laboriosam suscipit? Eum illo, quia nostrum deserunt quisquam ipsum autem praesentium quaerat soluta, vero ut odio ratione suscipit perferendis.
-      </p>
+      <AllToolsSection/>
+      <LandingToolsList/>
+      <Footer/>
     </div>
   );
 };
