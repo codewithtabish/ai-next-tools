@@ -47,3 +47,7 @@ export default function RootLayout({
   </html>
   );
 }
+
+
+
+// npm install react@18.2.0 react-dom@18.2.0 framer-motion@11.13.1

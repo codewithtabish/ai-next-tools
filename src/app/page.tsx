@@ -12,6 +12,7 @@ const HomePage = () => {
       <AllToolsSection/>
       <LandingToolsList/>
       <hr />
+      <hr />
       <Footer/>
     </div>
   );
