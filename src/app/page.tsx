@@ -2,10 +2,16 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit magni officiis temporibus rem accusantium deleniti iusto facere laboriosam sit sunt mollitia eligendi corporis assumenda debitis, aperiam animi ab quae?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit magni officiis temporibus rem accusantium deleniti iusto facere laboriosam sit sunt mollitia eligendi corporis assumenda debitis, aperiam animi ab quae?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odit magni officiis temporibus rem accusantium deleniti iusto facere laboriosam sit sunt mollitia eligendi corporis assumenda debitis, aperiam animi ab quae?
+    <div className="container mx-auto py-12">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, distinctio magni, voluptates dolorum quis, maxime dolore iusto eos cumque soluta ipsa? Repellat, numquam nisi delectus eligendi temporibus earum libero saepe.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, distinctio magni, voluptates dolorum quis, maxime dolore iusto eos cumque soluta ipsa? Repellat, numquam nisi delectus eligendi temporibus earum libero saepe.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, distinctio magni, voluptates dolorum quis, maxime dolore iusto eos cumque soluta ipsa? Repellat, numquam nisi delectus eligendi temporibus earum libero saepe.
+      <hr />
+      <hr />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit adipisci ipsum pariatur repellat, iste laudantium sequi ipsa natus quidem quae delectus inventore veniam vitae dolor dolorem sapiente quos fuga deserunt.
+      </p>
+     
       
     </div>
   )
