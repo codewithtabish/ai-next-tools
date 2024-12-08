@@ -33,6 +33,7 @@ export default function FlipText({
             exit="hidden"
             variants={framerProps}
             transition={{ duration, delay: i * delayMultiple }}
+            // @ts-ignore
             className={cn("origin-center drop-shadow-sm", className)}
           >
             {char}
