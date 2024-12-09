@@ -4,7 +4,7 @@ import React from 'react'
 const layout = ({children}:{children:React.ReactNode}) => {
   return (
     <div>
-    <div className=" max-w-6xl min-h-[100vh] mx-auto py-12">
+    <div className=" max-w-5xl min-h-[100vh] mx-auto py-6 md:py-8 md:px-0 px-4">
       {children}
         </div>
       <Footer/>

@@ -11,11 +11,7 @@ const HomePage = () => {
       <HeroSection />
       <AllToolsSection/>
       <LandingToolsList/>
-      <hr />
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt accusamus illo magnam laboriosam, debitis necessitatibus exercitationem labore temporibus dolorum praesentium asperiores culpa molestias recusandae enim fugit quasi sequi officiis atque.
-      </p>
-      <hr />
+     
       <Footer/>
     </div>
   );

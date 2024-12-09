@@ -4,17 +4,23 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/custom/ThemeProvider";
 import NavBar from "@/components/custom/Navbar";
 import MobileHeader from "@/components/custom/MobileHeader";
+import { lusitana, outfit } from '@/ui/fonts';
+import {
+  TooltipProvider,
+} from "@/components/ui/tooltip"
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
+
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -28,9 +34,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-    >
+    <body className={`${lusitana.className} antialiased`}>
+
          <ThemeProvider
           attribute='class'
           defaultTheme='light'
@@ -38,9 +43,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
     <div className=' '>
+      <TooltipProvider>
       <MobileHeader/>
       <NavBar/>
       {children}
+    </TooltipProvider>
       </div>
       </ThemeProvider>
     </body>
