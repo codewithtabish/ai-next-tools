@@ -32,6 +32,7 @@ export default function TagsInputBox() {
   return (
     <>
     <div className="flex max-w-4xl md:flex-row  flex-col px-5 md:px-0 items-center   md:space-x-2">
+        {/* {url?url:"not urk is "} */}
       <Input type="email" className="w-full" value={url} onChange={(e:any) =>setUrl(e.target.value)} placeholder="Tags Extractor ..." />
       {!loading&&
          <Button type="submit" className={`dark:text-white w-full  flex md:w-auto ${loading?'loader':''} `}

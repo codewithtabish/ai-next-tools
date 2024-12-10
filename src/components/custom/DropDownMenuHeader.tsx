@@ -32,10 +32,12 @@ export function NavigationMenuDemo() {
               </Link>
                 </li>
               <li>
+              <Link href="/qr">
 
-              <ListItem href="/tools/text-summarizer" title="Text Summarizer">
+              <ListItem href="/qr" title="QR GENERATOR">
                 Quickly summarize long texts into concise and clear summaries.
               </ListItem>
+              </Link>
               </li>
               <li>
 
