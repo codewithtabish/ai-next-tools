@@ -50,7 +50,8 @@ export default function QrTextBox() {
         <QRCode
           size={256}
           style={{ maxWidth: "100%", width: "100%" }}
-          value={`http://localhost:3000?qr=${encodeURIComponent(qrCodeText)}`}
+          value={qrCodeText}
+        //   value={`http://localhost:3000?qr=${encodeURIComponent(qrCodeText)}`}
           viewBox={`0 0 256 256`}
         />
          <div className="flex  justify-center  space-x-4 mt-2">
