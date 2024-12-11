@@ -45,12 +45,14 @@ export function NavigationMenuDemo() {
                 </Link>
               </li>
               <li>
-                <ListItem
-                  href="/tools/language-translator"
-                  title="Language Translator"
-                >
-                  Translate text between multiple languages instantly.
-                </ListItem>
+                <Link href="/domain">
+                  <ListItem href="/domain" title="DOMAIN INFORMATION">
+                    Extract and display detailed information about a domain,
+                    including its registration, DNS records, and hosting
+                    provider. Translate text between multiple languages
+                    instantly.
+                  </ListItem>
+                </Link>
               </li>
               <li>
                 <ListItem href="/tools/chatbot-builder" title="Chatbot Builder">

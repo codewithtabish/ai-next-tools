@@ -11,7 +11,7 @@ const HomePage = () => {
       <HeroSection />
       <AllToolsSection/>
       <LandingToolsList/>
-     
+        
       <Footer/>
     </div>
   );

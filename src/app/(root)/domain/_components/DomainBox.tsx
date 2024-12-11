@@ -3,29 +3,29 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ipInfoService } from "@/services/ip-info-service";
-import IPResult from "./IPResult";
 import Loader from "@/components/custom/Loader";
 import { X } from "lucide-react";
+import { domainService } from "@/services/domain-service";
+import DomainResult from "./DomainResult";
 
-export default function IPINFOBOX() {
-  const [ip, setIp] = useState<string>("");
+export default function DomainInfoBox() {
+  const [domain, setDomain] = useState<string>("");
   const [data, setData] = useState<any | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [showIPResult, setShowIPResult] = useState<boolean>(false);
 
-  const getAllIPInfo = async () => {
+  const getDomainInfo = async () => {
     setLoading(true);
     setError(null);
 
     try {
-      const result = await ipInfoService(ip);
+      const result = await domainService(domain);
       if (result) {
         setData(result);
         setShowIPResult(true);
       } else {
-        setError("Failed to fetch data. Please check the IP.");
+        setError("Failed to fetch data. Please check the domain.");
         setTimeout(() => setError(null), 3000);
       }
     } catch (err: any) {
@@ -46,20 +46,18 @@ export default function IPINFOBOX() {
         <Input
           type="text"
           className="w-full"
-          value={ip}
-          onChange={(e: any) => setIp(e.target.value)}
-          placeholder="Enter IP address..."
+          value={domain}
+          onChange={(e: any) => setDomain(e.target.value)}
+          placeholder="Enter domain... (e.g., codewithtabish.com)"
         />
         {!loading && (
           <Button
             type="submit"
-            className={`dark:text-white w-full flex md:w-auto ${
-              loading ? "loader" : ""
-            }`}
-            onClick={getAllIPInfo}
-            disabled={!ip}
+            className={`dark:text-white w-full flex md:w-auto ${loading ? "loader" : ""}`}
+            onClick={getDomainInfo}
+            disabled={!domain}
           >
-            GET IP INFO
+            GET DOMAIN INFO
           </Button>
         )}
         {loading && <Loader />}
@@ -73,11 +71,11 @@ export default function IPINFOBOX() {
             className="absolute -top-5 -right-[-17%] p-2 text-red-500 text-3xl"
             onClick={handleClose}
           >
-            <X size={20} >
-                clear
-                </X> {/* Lucide cross icon */}
+            <X size={20}>
+              clear
+            </X> {/* Lucide cross icon */}
           </button>
-          <IPResult data={data} />
+          <DomainResult data={data} />
         </div>
       )}
     </>
