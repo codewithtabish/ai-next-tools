@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/custom/ThemeProvider";
 import NavBar from "@/components/custom/Navbar";
 import MobileHeader from "@/components/custom/MobileHeader";
 import { lusitana, outfit } from '@/ui/fonts';
+import { Analytics } from "@vercel/analytics/react"
+
 import {
   TooltipProvider,
 } from "@/components/ui/tooltip"
