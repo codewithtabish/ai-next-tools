@@ -55,9 +55,12 @@ export function NavigationMenuDemo() {
                 </Link>
               </li>
               <li>
-                <ListItem href="/tools/chatbot-builder" title="Chatbot Builder">
-                  Create custom chatbots for websites or applications.
-                </ListItem>
+                <Link href="/image_createtor">
+                  <ListItem href="/image_createtor" title="IMAGE CREATOR">
+                    Generate custom AI-powered images based on your prompts and
+                    ideas.
+                  </ListItem>
+                </Link>
               </li>
               <li>
                 <ListItem href="/tools/audio-enhancer" title="Audio Enhancer">
