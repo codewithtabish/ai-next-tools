@@ -2,7 +2,7 @@ import { TagsResponse } from "@/types";
 
 export const extractTags = async (url: string): Promise<TagsResponse | null> => {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/tags_extractor`, {
+    const response = await fetch(`https://python-setup.onrender.com/api/v1/tags_extractor`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

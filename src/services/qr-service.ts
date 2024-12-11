@@ -2,7 +2,7 @@
   
   export const qrCodeGeneratorUtils = async (qrText: string): Promise<any | null> => {
     try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/generate_qr`, {
+        const response = await fetch(`https://python-setup.onrender.com/api/v1/generate_qr`, {
             method: 'POST',
         headers: {
           'Content-Type': 'application/json',

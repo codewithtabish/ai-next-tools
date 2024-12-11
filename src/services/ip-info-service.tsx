@@ -1,6 +1,6 @@
 export const ipInfoService = async (ip: string): Promise<any | null> => {
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/ip_info?ip=${ip}`, {
+      const response = await fetch(`https://python-setup.onrender.com/api/v1/ip_info?ip=${ip}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
