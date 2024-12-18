@@ -8,6 +8,7 @@ import rehypePrettyCode from 'rehype-pretty-code';
 import Link from 'next/link';
 import Markdown from 'react-markdown';
 import ContentRender from './ContentRender';
+import Image from 'next/image';
 
 const markdown = '# Hi, *Pluto*!'
 
@@ -16,14 +17,16 @@ const BlogReadSection = ({blog}:any) => {
   return (
          <div className="max-w-4xl mx-auto p-6 ">
          <div className="mb-6">
-           <img
+           <Image
             src={blog.blog_main_image}
             alt={blog.title}
+            width={800}
+            height={400}
             className="w-full h-64 object-cover rounded-lg"
           />
         </div>
-        <div className="mb-4">
-          <h1 className="text-3xl font-bold ">{blog.title}</h1>
+        <div className="mb-4 pt-3">
+          <h1 className="md:text-3xl text-xl font-bold ">{blog.title}</h1>
           <p className="text-sm  mt-2">
             Category: <span className="text-blue-600">{blog.category}</span>
           </p>

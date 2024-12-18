@@ -9,8 +9,8 @@ const SingleBlogRootLayout = ({ children}:any) => {
         <div className="col-span-10">
         {children}
           </div>
-          <div className='col-span-2 bg-red-500  flex flex-col gap-6 '>
-            <RecommendedBlogs/>
+          <div className='col-span-2  flex flex-col gap-6 '>
+            {/* <RecommendedBlogs/> */}
             <div className="hidden lg:block">
             <BlogsAd/>
 
