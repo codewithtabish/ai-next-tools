@@ -33,6 +33,7 @@ const NavBar = () => {
           <NavigationMenuDemo/>
           </Link>
           <Link href="/pricing">Pricing</Link>
+          <Link href="/blogs">Blogs</Link>
           <Link href="/about">About Us</Link>
         </div>
     </nav>
