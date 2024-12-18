@@ -6,7 +6,7 @@ type BlogProps = {
   params: { slug: string }; // Accepting blogId as a parameter from props
 };
 
-const Page = async({ params }: BlogProps) => {
+const Page = async({ params }: any) => {
   const { slug } = params; // Destructuring to extract blogId
   const response=await fetchBlogBySlug(slug)
 

@@ -6,7 +6,7 @@
         headers: {
           'Content-Type': 'application/json',
         },
-        cache:'default'
+        cache:'force-cache'
       });
   
       if (!response.ok) {
