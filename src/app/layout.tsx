@@ -24,6 +24,7 @@ export const metadata: ExtendedMetadata = {
     "EasyKit provides a collection of simple, fast, and reliable solutions to help you streamline your tasks. Whether it's converting documents, generating QR codes, or solving other everyday challenges, our platform offers the tools you need to get things done effortlessly.",
     keywords: [
       "EasyKit",
+      "easykit.com",
       "document conversion",
       "QR code generator",
       "video generator",
@@ -323,9 +324,11 @@ export const metadata: ExtendedMetadata = {
       "video tools for SEO",
       "online image compression tools",
       "convert Word to image online",
-      "video and image conversion tool",
+      "video and image conversion tool"
     ],
-  
+
+    
+ 
 
   // Additional Meta Tags for SEO and Social Sharing
   icons: {
@@ -405,6 +408,15 @@ export default function RootLayout({
             sizes="512x512"
             href="/android-chrome-512x512.png"
           />
+
+           {/* AdSense Script */}
+           <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3242419931272978"
+            crossOrigin="anonymous"
+          ></script>
+
+          {/* You can add more meta tags as needed */}
 
           {/* Keywords */}
 
