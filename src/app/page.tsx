@@ -1,5 +1,6 @@
 "use client"
 import AllToolsSection from "@/components/custom/AllToolsSection";
+import FeedbackList from "@/components/custom/FeedbackList";
 import Footer from "@/components/custom/Footer";
 import HeroSection from "@/components/custom/HeroSection";
 import LandingToolsList from "@/components/custom/LandingToolsList";
@@ -11,7 +12,7 @@ const HomePage = () => {
       <HeroSection />
       <AllToolsSection/>
       <LandingToolsList/>
-        
+      <FeedbackList/>
       <Footer/>
     </div>
   );

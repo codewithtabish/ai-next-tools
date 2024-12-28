@@ -1,6 +1,7 @@
 import React from 'react'
 import TagsInputBox from './_components/TagsInputBox'
 import TagPageInfoData from './_components/TagPageInfoData'
+import TagsAllImageDetailSection from './_components/TagsAllImageDetailSection'
 
 const TagsExtractorPage = () => {
   return (

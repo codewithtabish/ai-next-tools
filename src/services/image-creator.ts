@@ -1,6 +1,6 @@
 export const generateImage = async (prompt: string): Promise<string | null> => {
   try {
-    const response = await fetch(`http://localhost:5000/api/v1/create_image`, {
+    const response = await fetch(`https://python-setup.onrender.com/api/v1/create_image`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -63,9 +63,12 @@ export function NavigationMenuDemo() {
                 </Link>
               </li>
               <li>
-                <ListItem href="/tools/audio-enhancer" title="Audio Enhancer">
-                  Enhance and clean up audio files using advanced AI algorithms.
-                </ListItem>
+              <Link href="/music">
+                  <ListItem href="/music" title="MUSIC CREATOR">
+                    Generate custom AI-powered music based on your prompts and
+                    ideas.
+                  </ListItem>
+                </Link>
               </li>
             </ul>
           </NavigationMenuContent>

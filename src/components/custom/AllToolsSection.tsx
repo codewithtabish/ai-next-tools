@@ -1,5 +1,5 @@
 import React from 'react'
-import toolone from "../../../public/images/qrone.png";
+import toolone from "../../../public/images/qricon.jpg";
 import Image from 'next/image';
 import TitleText from './TitleText';
 import { ImageIcon, InfoIcon, QrCode, RussianRuble, Youtube } from 'lucide-react';
@@ -8,27 +8,27 @@ import { ImageIcon, InfoIcon, QrCode, RussianRuble, Youtube } from 'lucide-react
 const AllToolsSection = () => {
     const tools=[
         {
-        toolImage:<Youtube height={120} width={120} className='mx-auto'/>,
+        toolImage:<Youtube height={120} width={120} className='mx-auto text-red-500'/>,
         toolName:"Tags Extractor",
         discription:"This is the tags extractor"
     },
         {
-        toolImage:<QrCode  height={120} width={120} className='mx-auto'/>,
+        toolImage:<QrCode  height={120} width={120} className='mx-auto text-purple-900'/>,
         toolName:"Tags Extractor",
         discription:"This is the tags extractor"
     },
         {
-        toolImage:<RussianRuble  height={120} width={120} className='mx-auto'/>,
+        toolImage:<RussianRuble  height={120} width={120} className='mx-auto text-orange-800'/>,
         toolName:"Currency Extractor",
         discription:"This is the tags extractor"
     },
         {
-          toolImage:<ImageIcon  height={120} width={120} className='mx-auto'/>,
+          toolImage:<ImageIcon  height={120} width={120} className='mx-auto text-teal-800'/>,
           toolName:"Tags Extractor",
         discription:"This is the tags extractor"
     },
         {
-          toolImage:<InfoIcon  height={120} width={120} className='mx-auto'/>,
+          toolImage:<InfoIcon  height={120} width={120} className='mx-auto text-sky-950'/>,
           toolName:"Tags Extractor",
         discription:"This is the tags extractor"
     },
@@ -49,6 +49,7 @@ const AllToolsSection = () => {
                     <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                       {/* <item.toolImage /> */}
                       {item.toolImage}
+                      {/* <Image src={toolone} alt='tool one' width={0} height={90} className='object-cover rounded-md mx-auto  max-h-[90px]'/> */}
                       
                       <div className="p-6">
                         <h2 className="tracking-widest text-xs title-font font-medium  mb-1">CATEGORY</h2>

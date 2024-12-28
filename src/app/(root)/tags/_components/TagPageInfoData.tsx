@@ -1,8 +1,7 @@
-import AllToolsSection from '@/components/custom/AllToolsSection'
-import LandingToolsList from '@/components/custom/LandingToolsList'
 import { outfit } from '@/ui/fonts'
 import Link from 'next/link'
 import React from 'react'
+import TagsAllImageDetailSection from './TagsAllImageDetailSection'
 
 const TagPageInfoData = () => {
   return (
@@ -57,7 +56,7 @@ const TagPageInfoData = () => {
 
         </div>
         <div>
-            <LandingToolsList/>
+            <TagsAllImageDetailSection/>
         </div>
       
     </div>

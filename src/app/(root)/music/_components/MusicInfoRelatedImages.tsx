@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import React from 'react';
-import QRIMAGE from "../../../public/images/qrtwo.jpg";
-import Tags from "../../../public/images/tagsone.svg";
-import DOMAINIMAGE from "../../../public/images/domainone.svg";
-import IPONE from "../../../public/images/iptwo.svg";
-import ImageTextExtract from "../../../public/images/image-text-extract.svg";
+import MusicOne from "../../../../../public/images/music/music-one.svg";
+import MusicInfoTwo from "../../../../../public/images/music/music-two.svg";
+import MusicThree from "../../../../../public/images/music/music-three.svg";
+import MusicFour from "../../../../../public/images/music/music-four.svg";
+import MusicFive from "../../../../../public/images/music/music-five.svg";
 
 const tools = [
   {
     title: "QR Generator",
-    image: QRIMAGE,
+    image: MusicOne,
     description: `Easily generate QR codes for a variety of applications, from sharing URLs and contact details to creating event invitations. 
                   Customize the size, color, and format of the code to suit your needs. 
                   This tool ensures quick and reliable encoding for smooth user experience. 
@@ -18,7 +18,7 @@ const tools = [
   },
   {
     title: "Tags Extractor",
-    image: Tags,
+    image: MusicInfoTwo,
     description: `Effortlessly extract tags from large blocks of text, helping improve your SEO strategy. 
                   This tool identifies the most relevant keywords that can boost your content's visibility on search engines. 
                   Save time and focus on what matters while we analyze your text and generate actionable insights. 
@@ -27,7 +27,7 @@ const tools = [
   },
   {
     title: "IP Information",
-    image: IPONE,
+    image: MusicThree,
     description: `Discover detailed information about any IP address, including geolocation, ISP, and network data. 
                   This tool is perfect for network administrators and cybersecurity professionals. 
                   Gain insights into user locations and ensure the integrity of your web services. 
@@ -36,7 +36,7 @@ const tools = [
   },
   {
     title: "Domain Details",
-    image: DOMAINIMAGE,
+    image: MusicFour,
     description: `Get comprehensive information about any domain, including ownership details, expiration dates, and registrar data. 
                   This tool helps webmasters, businesses, and researchers in making informed decisions. 
                   Check the availability of domains and evaluate their history before purchase. 
@@ -45,7 +45,7 @@ const tools = [
   },
   {
     title: "Image Text Extractor",
-    image: ImageTextExtract,
+    image: MusicFive,
     description: `Get comprehensive information about any domain, including ownership details, expiration dates, and registrar data. 
                   This tool helps webmasters, businesses, and researchers in making informed decisions. 
                   Check the availability of domains and evaluate their history before purchase. 
@@ -54,7 +54,7 @@ const tools = [
   }
 ];
 
-const LandingToolsList = () => {
+const MusicInfoRelatedImages = () => {
   return (
     <section className="py-12 px-5">
       {tools.map((tool, index) => (
@@ -62,7 +62,7 @@ const LandingToolsList = () => {
           {index % 2 === 0 ? (
             <>
               <div className="flex-1">
-                <Image src={tool.image} className="w-full max-h-[350px] object-cover" alt={tool.title} width="500" height="200" />
+                <Image src={tool.image} className="md:w-[80%] max-h-[300px] object-cover" alt={tool.title} width="400" height="140" />
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">{tool.title}</h3>
@@ -76,7 +76,8 @@ const LandingToolsList = () => {
                 <p className="dark:text-gray-400 text-sm leading-loose">{tool.description}</p>
               </div>
               <div className="flex-1 order-1 md:order-2">
-                <Image src={tool.image} className="w-full max-h-[350px] object-cover" alt={tool.title} width="500" height="200" />
+              <Image src={tool.image} className="md:w-[80%] max-h-[300px] object-cover" alt={tool.title} width="400" height="140" />
+
               </div>
             </>
           )}
@@ -86,4 +87,4 @@ const LandingToolsList = () => {
   );
 };
 
-export default LandingToolsList;
+export default MusicInfoRelatedImages;

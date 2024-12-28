@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import React from 'react';
-import QRIMAGE from "../../../public/images/qrtwo.jpg";
-import Tags from "../../../public/images/tagsone.svg";
-import DOMAINIMAGE from "../../../public/images/domainone.svg";
-import IPONE from "../../../public/images/iptwo.svg";
-import ImageTextExtract from "../../../public/images/image-text-extract.svg";
+import TagInfoOne from "../../../../../public/images/tags/tag-info-one.svg";
+import TagInfoTwo from "../../../../../public/images/tags/tags-info-two.svg";
+import TagsInfoThree from "../../../../../public/images/tags/tags-info-three.svg";
+import IPONE from "../../../../../public/images/iptwo.svg";
+import ImageTextExtract from "../../../../../public/images/image-text-extract.svg";
 
 const tools = [
   {
     title: "QR Generator",
-    image: QRIMAGE,
+    image: TagInfoOne,
     description: `Easily generate QR codes for a variety of applications, from sharing URLs and contact details to creating event invitations. 
                   Customize the size, color, and format of the code to suit your needs. 
                   This tool ensures quick and reliable encoding for smooth user experience. 
@@ -18,7 +18,7 @@ const tools = [
   },
   {
     title: "Tags Extractor",
-    image: Tags,
+    image: TagInfoTwo,
     description: `Effortlessly extract tags from large blocks of text, helping improve your SEO strategy. 
                   This tool identifies the most relevant keywords that can boost your content's visibility on search engines. 
                   Save time and focus on what matters while we analyze your text and generate actionable insights. 
@@ -27,7 +27,7 @@ const tools = [
   },
   {
     title: "IP Information",
-    image: IPONE,
+    image: TagsInfoThree,
     description: `Discover detailed information about any IP address, including geolocation, ISP, and network data. 
                   This tool is perfect for network administrators and cybersecurity professionals. 
                   Gain insights into user locations and ensure the integrity of your web services. 
@@ -36,7 +36,7 @@ const tools = [
   },
   {
     title: "Domain Details",
-    image: DOMAINIMAGE,
+    image: IPONE,
     description: `Get comprehensive information about any domain, including ownership details, expiration dates, and registrar data. 
                   This tool helps webmasters, businesses, and researchers in making informed decisions. 
                   Check the availability of domains and evaluate their history before purchase. 
@@ -54,7 +54,7 @@ const tools = [
   }
 ];
 
-const LandingToolsList = () => {
+const TagsAllImageDetailSection = () => {
   return (
     <section className="py-12 px-5">
       {tools.map((tool, index) => (
@@ -86,4 +86,4 @@ const LandingToolsList = () => {
   );
 };
 
-export default LandingToolsList;
+export default TagsAllImageDetailSection;
